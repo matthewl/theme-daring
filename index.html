@@ -3,16 +3,21 @@ layout: default
 title: Home
 ---
 
-<div class="posts h-feed">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <a href="{{ post.url }}" class="post-date u-url"><time class="dt-published" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></a>
-	<div class="e-content">
-    {{ post.content }}
-    </div>
-  </div>
-  {% endfor %}
-</div>
+{% for post in paginator.posts %}
+  <article class="post-index post">
+    <header>
+      <div class="meta">
+        <h4>
+          <a href="{{ post.url }}" class="post-date u-url"><time class="dt-published" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></a>
+        </h4>
+      </div>
+    </header>
+
+    <section class="post e-content">
+      {{ post.content }}
+    </section>
+  </article>
+{% endfor %}
 
 <div class="pagination">
   {% if paginator.next_page %}

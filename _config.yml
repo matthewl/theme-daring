@@ -21,6 +21,10 @@ paginate: 20
 paginate_path: "/page/:num/"
 timezone: "US/Indiana-Starke"
 
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+
 # Custom vars
 version:          2.1.0
 
