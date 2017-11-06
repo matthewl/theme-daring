@@ -3,7 +3,7 @@
  */
 html {
   color: #4a4a4a;
-  font-family: Lora, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 48em) {
@@ -19,6 +19,14 @@ html {
 
 h1, h2, h3, h4, h5, h6, nav > ul {
   font-family: Oswald, sans-serif;
+}
+
+a {
+  color: #ab4642;
+}
+
+body {
+  border-top: 4px solid #ab4642;
 }
 
 /*
